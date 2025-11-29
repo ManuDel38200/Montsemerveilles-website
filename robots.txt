@@ -1,0 +1,8 @@
+# Robots.txt pour Monts Émerveilles
+# https://manudel38200.github.io/Montsemerveilles-website/
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://manudel38200.github.io/Montsemerveilles-website/sitemap.xml
