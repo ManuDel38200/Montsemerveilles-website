@@ -1,0 +1,1143 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monts Émerveilles | Massage bien-être près de Tarare (69)</title>
+    <meta name="description" content="Lidwine vous accueille dans son cocon d'amour pour des massages bien-être intuitifs et des soins holistiques personnalisés. Près de Tarare, Rhône.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Nunito+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --creme: #FAF7F2;
+            --creme-fonce: #F0EBE3;
+            --terre: #C4A484;
+            --terre-clair: #D4C4A8;
+            --terre-fonce: #8B7355;
+            --prune: #6B4E5C;
+            --prune-clair: #8A6B7C;
+            --rouge-doux: #A65D57;
+            --texte: #3D3A38;
+            --texte-doux: #6B6562;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Nunito Sans', sans-serif;
+            font-weight: 300;
+            background: var(--creme);
+            color: var(--texte);
+            line-height: 1.8;
+            font-size: 16px;
+            overflow-x: hidden;
+        }
+
+        /* Texture subtile */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+            opacity: 0.025;
+            pointer-events: none;
+            z-index: -1;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Cormorant', serif;
+            font-weight: 300;
+        }
+
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+            transition: all 0.4s ease;
+        }
+
+        nav.scrolled {
+            background: rgba(250, 247, 242, 0.97);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 2px 30px rgba(0,0,0,0.04);
+        }
+
+        .logo {
+            font-family: 'Cormorant', serif;
+            font-size: 1.4rem;
+            font-weight: 400;
+            color: var(--prune);
+            letter-spacing: 0.02em;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--texte-doux);
+            font-size: 0.85rem;
+            letter-spacing: 0.03em;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--prune);
+        }
+
+        .nav-cta {
+            background: var(--prune);
+            color: var(--creme) !important;
+            padding: 0.6rem 1.2rem;
+            border-radius: 2px;
+        }
+
+        .nav-cta:hover {
+            background: var(--prune-clair);
+        }
+
+        .menu-toggle {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            cursor: pointer;
+            padding: 5px;
+        }
+
+        .menu-toggle span {
+            width: 24px;
+            height: 2px;
+            background: var(--prune);
+            transition: all 0.3s ease;
+        }
+
+        /* Hero */
+        .hero {
+            min-height: 100vh;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+        }
+
+        .hero-content {
+            padding: 8rem 5% 4rem 8%;
+            opacity: 0;
+            animation: fadeIn 1s ease-out 0.3s forwards;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .hero-badge {
+            display: inline-block;
+            font-size: 0.75rem;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: var(--terre-fonce);
+            margin-bottom: 1.5rem;
+        }
+
+        .hero h1 {
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            line-height: 1.1;
+            color: var(--prune);
+            margin-bottom: 1.5rem;
+        }
+
+        .hero h1 span {
+            display: block;
+            font-style: italic;
+            font-weight: 300;
+            color: var(--terre-fonce);
+            font-size: 0.55em;
+            margin-top: 0.5em;
+        }
+
+        .hero-text {
+            font-size: 1.05rem;
+            color: var(--texte-doux);
+            margin-bottom: 2.5rem;
+            max-width: 450px;
+        }
+
+        .hero-cta {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.8rem;
+            background: var(--prune);
+            color: var(--creme);
+            text-decoration: none;
+            padding: 1rem 2rem;
+            font-size: 0.9rem;
+            letter-spacing: 0.03em;
+            transition: all 0.3s ease;
+        }
+
+        .hero-cta:hover {
+            background: var(--prune-clair);
+            transform: translateX(5px);
+        }
+
+        .hero-image {
+            height: 100vh;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center top;
+        }
+
+        .hero-image::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to right, var(--creme) 0%, transparent 15%);
+        }
+
+        /* Sections communes */
+        section {
+            padding: 5rem 5%;
+        }
+
+        .section-header {
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto 3rem;
+        }
+
+        .section-label {
+            font-size: 0.75rem;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: var(--terre-fonce);
+            margin-bottom: 0.8rem;
+        }
+
+        .section-title {
+            font-size: clamp(1.8rem, 3vw, 2.5rem);
+            color: var(--prune);
+            line-height: 1.3;
+        }
+
+        /* Qui suis-je */
+        .about {
+            display: grid;
+            grid-template-columns: 1fr 1.3fr;
+            gap: 4rem;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 5rem 5%;
+        }
+
+        .about-image {
+            position: relative;
+        }
+
+        .about-image img {
+            width: 100%;
+            border-radius: 200px 200px 20px 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.1);
+        }
+
+        .about-image::before {
+            content: '';
+            position: absolute;
+            top: -15px;
+            right: -15px;
+            width: 100px;
+            height: 100px;
+            border: 1px solid var(--terre);
+            border-radius: 50%;
+            opacity: 0.5;
+        }
+
+        .about-content h2 {
+            font-size: 2rem;
+            color: var(--prune);
+            margin-bottom: 0.5rem;
+        }
+
+        .about-content h2 span {
+            display: block;
+            font-size: 0.5em;
+            color: var(--terre-fonce);
+            font-style: italic;
+            margin-top: 0.3em;
+            font-weight: 300;
+        }
+
+        .about-text {
+            color: var(--texte-doux);
+            margin-bottom: 1.2rem;
+            text-align: justify;
+        }
+
+        .about-text:first-of-type::first-letter {
+            font-family: 'Cormorant', serif;
+            font-size: 3.5rem;
+            float: left;
+            line-height: 0.8;
+            padding-right: 0.5rem;
+            padding-top: 0.1rem;
+            color: var(--prune);
+        }
+
+        /* Le cocon */
+        .cocon {
+            background: var(--creme-fonce);
+            padding: 5rem 5%;
+        }
+
+        .cocon-grid {
+            display: grid;
+            grid-template-columns: 1.2fr 1fr;
+            gap: 3rem;
+            max-width: 1100px;
+            margin: 0 auto;
+            align-items: center;
+        }
+
+        .cocon-images {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+        }
+
+        .cocon-images img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+
+        .cocon-images img:first-child {
+            grid-column: span 2;
+            height: 280px;
+        }
+
+        .cocon-content h2 {
+            font-size: 2rem;
+            color: var(--prune);
+            margin-bottom: 1.5rem;
+        }
+
+        .cocon-content p {
+            color: var(--texte-doux);
+            margin-bottom: 1rem;
+        }
+
+        /* Les soins */
+        .soins {
+            padding: 5rem 5%;
+            max-width: 1300px;
+            margin: 0 auto;
+        }
+
+        .soin-block {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            margin-bottom: 5rem;
+            align-items: center;
+        }
+
+        .soin-block:nth-child(even) {
+            direction: rtl;
+        }
+
+        .soin-block:nth-child(even) > * {
+            direction: ltr;
+        }
+
+        .soin-images {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+        }
+
+        .soin-images img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+
+        .soin-images img:first-child {
+            grid-column: span 2;
+            height: 250px;
+        }
+
+        .soin-content {
+            padding: 1rem 0;
+        }
+
+        .soin-badge {
+            display: inline-block;
+            font-size: 0.7rem;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: var(--creme);
+            background: var(--prune);
+            padding: 0.4rem 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .soin-title {
+            font-size: 1.8rem;
+            color: var(--prune);
+            margin-bottom: 1rem;
+        }
+
+        .soin-text {
+            color: var(--texte-doux);
+            margin-bottom: 1rem;
+            text-align: justify;
+        }
+
+        .soin-details {
+            display: flex;
+            gap: 2rem;
+            margin-top: 1.5rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--creme-fonce);
+        }
+
+        .soin-detail {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .soin-detail-label {
+            font-size: 0.7rem;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--terre-fonce);
+        }
+
+        .soin-detail-value {
+            font-family: 'Cormorant', serif;
+            font-size: 1.3rem;
+            color: var(--prune);
+        }
+
+        /* Poème */
+        .poeme {
+            background: var(--prune);
+            color: var(--creme);
+            padding: 5rem 5%;
+            text-align: center;
+        }
+
+        .poeme-content {
+            max-width: 550px;
+            margin: 0 auto;
+        }
+
+        .poeme-text {
+            font-family: 'Cormorant', serif;
+            font-size: 1.25rem;
+            font-style: italic;
+            line-height: 2;
+            white-space: pre-line;
+            margin-bottom: 2rem;
+        }
+
+        .poeme-signature {
+            font-size: 0.85rem;
+            color: var(--terre-clair);
+        }
+
+        /* Contact */
+        .contact {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .contact-image {
+            height: 100%;
+            min-height: 500px;
+        }
+
+        .contact-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .contact-content {
+            padding: 4rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .contact-content h2 {
+            font-size: 2rem;
+            color: var(--prune);
+            margin-bottom: 1rem;
+        }
+
+        .contact-intro {
+            color: var(--texte-doux);
+            margin-bottom: 2rem;
+        }
+
+        .contact-method {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1.2rem;
+            padding: 1rem;
+            background: var(--creme-fonce);
+            transition: transform 0.3s ease;
+        }
+
+        .contact-method:hover {
+            transform: translateX(5px);
+        }
+
+        .contact-method-icon {
+            width: 45px;
+            height: 45px;
+            background: var(--prune);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--creme);
+            flex-shrink: 0;
+        }
+
+        .contact-method-content h4 {
+            font-family: 'Cormorant', serif;
+            font-size: 1.1rem;
+            color: var(--prune);
+            margin-bottom: 0.1rem;
+        }
+
+        .contact-method-content p,
+        .contact-method-content a {
+            font-size: 0.9rem;
+            color: var(--texte-doux);
+            text-decoration: none;
+        }
+
+        .contact-method-content a:hover {
+            color: var(--prune);
+        }
+
+        .contact-note {
+            margin-top: 2rem;
+            padding: 1.2rem;
+            background: rgba(107, 78, 92, 0.08);
+            border-left: 3px solid var(--prune);
+            font-size: 0.9rem;
+            color: var(--texte-doux);
+        }
+
+        .contact-note strong {
+            color: var(--prune);
+            display: block;
+            margin-bottom: 0.3rem;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--texte);
+            color: var(--creme);
+            padding: 3rem 5%;
+        }
+
+        .footer-content {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+        }
+
+        .footer-logo {
+            font-family: 'Cormorant', serif;
+            font-size: 1.3rem;
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .footer-links a {
+            color: rgba(250, 247, 242, 0.7);
+            text-decoration: none;
+            font-size: 0.85rem;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: var(--creme);
+        }
+
+        .footer-social {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .footer-social a {
+            width: 40px;
+            height: 40px;
+            border: 1px solid rgba(250, 247, 242, 0.3);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: rgba(250, 247, 242, 0.7);
+            transition: all 0.3s ease;
+        }
+
+        .footer-social a:hover {
+            border-color: var(--terre);
+            color: var(--terre);
+        }
+
+        .footer-bottom {
+            max-width: 1100px;
+            margin: 2rem auto 0;
+            padding-top: 1.5rem;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            text-align: center;
+            font-size: 0.8rem;
+            color: rgba(250, 247, 242, 0.5);
+        }
+
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .hero {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-image {
+                height: 50vh;
+                order: -1;
+            }
+
+            .hero-image::after {
+                background: linear-gradient(to top, var(--creme) 0%, transparent 30%);
+            }
+
+            .hero-content {
+                padding: 2rem 5% 4rem;
+            }
+
+            .about {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .about-image {
+                max-width: 350px;
+                margin: 0 auto;
+            }
+
+            .cocon-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .soin-block,
+            .soin-block:nth-child(even) {
+                grid-template-columns: 1fr;
+                direction: ltr;
+            }
+
+            .contact {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-image {
+                min-height: 300px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .menu-toggle {
+                display: flex;
+            }
+
+            section {
+                padding: 3rem 5%;
+            }
+
+            .soin-details {
+                flex-wrap: wrap;
+                gap: 1rem;
+            }
+
+            .cocon-images {
+                grid-template-columns: 1fr;
+            }
+
+            .cocon-images img:first-child {
+                height: 220px;
+            }
+
+            .cocon-images img {
+                height: 150px;
+            }
+
+            .soin-images {
+                grid-template-columns: 1fr;
+            }
+
+            .soin-images img:first-child,
+            .soin-images img {
+                height: 200px;
+            }
+
+            .footer-content {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .contact-content {
+                padding: 2rem;
+            }
+        }
+
+        /* Mobile menu */
+        .mobile-menu {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: var(--creme);
+            z-index: 999;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        .mobile-menu.active {
+            display: flex;
+        }
+
+        .mobile-menu a {
+            font-family: 'Cormorant', serif;
+            font-size: 1.8rem;
+            color: var(--prune);
+            text-decoration: none;
+        }
+
+        .mobile-menu-close {
+            position: absolute;
+            top: 1.5rem;
+            right: 5%;
+            font-size: 2rem;
+            color: var(--prune);
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="logo">Monts Émerveilles</div>
+        <ul class="nav-links">
+            <li><a href="#accueil">Accueil</a></li>
+            <li><a href="#qui-suis-je">Lidwine</a></li>
+            <li><a href="#soins">Les soins</a></li>
+            <li><a href="#contact" class="nav-cta">Contact</a></li>
+        </ul>
+        <div class="menu-toggle" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <span class="mobile-menu-close" onclick="toggleMenu()">×</span>
+        <a href="#accueil" onclick="toggleMenu()">Accueil</a>
+        <a href="#qui-suis-je" onclick="toggleMenu()">Lidwine</a>
+        <a href="#soins" onclick="toggleMenu()">Les soins</a>
+        <a href="#contact" onclick="toggleMenu()">Contact</a>
+    </div>
+
+    <!-- Hero -->
+    <section class="hero" id="accueil">
+        <div class="hero-content">
+            <span class="hero-badge">Massage bien-être • Près de Tarare (69)</span>
+            <h1>
+                Monts Émerveilles
+                <span>Un cocon d'amour pour se retrouver</span>
+            </h1>
+            <p class="hero-text">
+                Bienvenue dans cet espace dédié au bien-être et à la reconnexion à soi. 
+                Lidwine vous accueille pour des massages intuitifs et des soins holistiques personnalisés, 
+                dans un cadre sécurisant et douillet.
+            </p>
+            <a href="#contact" class="hero-cta">
+                Prendre rendez-vous
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+            </a>
+        </div>
+        <div class="hero-image">
+            <img src="images/lidwine-nature.png" alt="Lidwine dans la nature, bras ouverts vers le ciel">
+        </div>
+    </section>
+
+    <!-- Qui suis-je -->
+    <section id="qui-suis-je">
+        <div class="about">
+            <div class="about-image">
+                <img src="images/lidwine-danse.png" alt="Lidwine dansant">
+            </div>
+            <div class="about-content">
+                <p class="section-label">Qui suis-je ?</p>
+                <h2>
+                    Je suis Lidwine
+                    <span>Semeuse de graines de joie et saupoudreuse de paillettes d'amour</span>
+                </h2>
+                <p class="about-text">
+                    Dès l'adolescence, le massage et le toucher m'appellent ; l'humain, son fonctionnement et ses émotions me passionnent. Je ne fais rien de tout ça, en apparence, à part suivre mon chemin, d'errances en expériences, parsemé de formations riches et diverses. Je grandis, je me rencontre.
+                </p>
+                <p class="about-text">
+                    Dans ma vie de jeune adulte, le Tantra m'appelle, sans que je sache le nommer : l'énergie vitale, le trésor trop souvent oublié qu'est le corps… je perçois des portes qui ouvrent sur plus grand.
+                </p>
+                <p class="about-text">
+                    Ce n'est qu'en 2018, enfin prête, que les pièces du puzzle qui me compose et m'anime s'assemblent, lors de ma rencontre avec le Tantra, au cours d'une formation en massage tantrique. Cette rencontre du Tantra, dans son acception la plus spirituelle et sacrée m'ouvre le cœur et marque un tournant dans ma vie.
+                </p>
+                <p class="about-text">
+                    En 2022, je me jette à l'eau ! Je crée un cocon d'amour, reflet extérieur de mon intérieur, dont je vous ouvre les portes, pour vous proposer des soins intuitifs inspirés de mes diverses formations et de qui je suis.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Le cocon -->
+    <section class="cocon">
+        <div class="cocon-grid">
+            <div class="cocon-images">
+                <img src="images/cocon-table.png" alt="La table de massage dans le cocon">
+                <img src="images/huile-bougie.png" alt="Huile de massage et bougie">
+                <img src="images/lampe-sel.png" alt="Lampe de sel">
+            </div>
+            <div class="cocon-content">
+                <p class="section-label">L'espace</p>
+                <h2>Le cocon d'amour</h2>
+                <p>
+                    Un espace chaleureux et sécurisant, préparé avec soin pour vous accueillir. 
+                    Avant chaque séance, l'espace est « nettoyé énergétiquement » et une huile de massage est préparée juste pour vous.
+                </p>
+                <p>
+                    Cette huile est composée d'huiles végétales bio, de macérats huileux préparés par mes soins avec les trésors de mon jardin, et d'huiles essentielles discrètes et sélectionnées.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Les soins -->
+    <section class="soins" id="soins">
+        <div class="section-header">
+            <p class="section-label">Mes propositions</p>
+            <h2 class="section-title">Des soins qui vous ressemblent</h2>
+        </div>
+
+        <!-- Massage des sens et d'essence -->
+        <div class="soin-block">
+            <div class="soin-images">
+                <img src="images/cocon-table.png" alt="Table de massage">
+                <img src="images/cueillette-fleurs.png" alt="Cueillette de fleurs pour les macérats">
+                <img src="images/huile-bougie.png" alt="Huile de massage">
+            </div>
+            <div class="soin-content">
+                <span class="soin-badge">Soin signature</span>
+                <h3 class="soin-title">Le massage des sens et d'essence</h3>
+                <p class="soin-text">
+                    Le massage des sens et d'essence, c'est un voyage intérieur doux et profond, une danse de l'intime. C'est un massage intuitif, au rythme d'un toucher lent, à la fois caressant et intense, qui englobe et réunifie l'intégralité du corps, dans le respect de votre intimité.
+                </p>
+                <p class="soin-text">
+                    C'est une exploration de votre sensualité (sans sexualisation ni érotisme) et de votre essence authentique, dans le cadre sécurisant et douillet du cocon d'amour préparé pour vous.
+                </p>
+                <p class="soin-text">
+                    Une séance dure au minimum 2h, parfois davantage selon le besoin du moment. Elle comprend des temps d'échange, avant et après le massage, un temps de centrage et d'alignement intérieur et le massage, à l'huile, d'1h30 environ.
+                </p>
+                <div class="soin-details">
+                    <div class="soin-detail">
+                        <span class="soin-detail-label">Durée</span>
+                        <span class="soin-detail-value">2h minimum</span>
+                    </div>
+                    <div class="soin-detail">
+                        <span class="soin-detail-label">Tarif</span>
+                        <span class="soin-detail-value">120 €</span>
+                    </div>
+                    <div class="soin-detail">
+                        <span class="soin-detail-label">Pour</span>
+                        <span class="soin-detail-value">Hommes & Femmes</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Only You -->
+        <div class="soin-block">
+            <div class="soin-images">
+                <img src="images/cocon-sol.png" alt="Espace massage au sol">
+                <img src="images/citation-yogi.png" alt="Citation sur le dévouement">
+                <img src="images/lampe-sel.png" alt="Ambiance tamisée">
+            </div>
+            <div class="soin-content">
+                <span class="soin-badge">Sur mesure</span>
+                <h3 class="soin-title">Only You</h3>
+                <p class="soin-text">
+                    L'expérience vous tente… Et pourtant… Vous souffrez d'une blessure, d'un blocage physique ou émotionnel, d'une « particularité » qui vous retient ?
+                </p>
+                <p class="soin-text">
+                    Je suis à votre service et à votre écoute. Ce voyage est le vôtre et nous pouvons construire l'expérience ensemble, pour qu'elle vous nourrisse et vous serve, tel que vous êtes.
+                </p>
+                <p class="soin-text">
+                    Contactez-moi pour discuter de votre situation et établir ensemble le massage juste et adapté, au tarif associé.
+                </p>
+                <div class="soin-details">
+                    <div class="soin-detail">
+                        <span class="soin-detail-label">Durée</span>
+                        <span class="soin-detail-value">À définir ensemble</span>
+                    </div>
+                    <div class="soin-detail">
+                        <span class="soin-detail-label">Tarif</span>
+                        <span class="soin-detail-value">Sur devis</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Odyssée de l'être -->
+        <div class="soin-block">
+            <div class="soin-images">
+                <img src="images/autel-chouette.png" alt="Autel avec oracle et outils">
+                <img src="images/bol-tibetain.png" alt="Bol tibétain">
+                <img src="images/anges-bougeoir.png" alt="Anges bougeoir">
+            </div>
+            <div class="soin-content">
+                <span class="soin-badge">Accompagnement holistique</span>
+                <h3 class="soin-title">Odyssée de l'être</h3>
+                <p class="soin-text">
+                    Je ne suis pas thérapeute. Néanmoins, j'ai acquis au gré de mes multiples formations et expériences divers outils que j'ai à cœur de proposer de façon spécifique à mes clients : Reiki, fleurs de Bach, tambour, hochets, danse, respirations, méditations en mouvement, soins de libération émotionnelle, toucher conscient, massages spécifiques, etc.
+                </p>
+                <p class="soin-text">
+                    Que vous soyez face à des choix complexes, à des problématiques émotionnelles, que vous souhaitiez retrouver de l'élan, de la pétillance, vous reconnecter à votre joie intérieure… je me mets à votre disposition dans un soutien ou un accompagnement holistique et intuitif personnalisé, adapté à qui vous êtes, vos besoins, votre situation.
+                </p>
+                <p class="soin-text">
+                    Cette proposition s'adresse principalement aux personnes avec lesquelles un échange profond aura eu lieu — au cours d'une séance de massage par exemple — et fait émerger des besoins sur lesquels je peux vous assister.
+                </p>
+                <div class="soin-details">
+                    <div class="soin-detail">
+                        <span class="soin-detail-label">Format</span>
+                        <span class="soin-detail-value">Ponctuel ou suivi</span>
+                    </div>
+                    <div class="soin-detail">
+                        <span class="soin-detail-label">Tarif</span>
+                        <span class="soin-detail-value">Selon durée</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Poème -->
+    <section class="poeme">
+        <div class="poeme-content">
+            <p class="section-label" style="color: var(--terre-clair);">Ma philosophie</p>
+            <p class="poeme-text">Masser...
+C'est s'adapter
+En toute humilité
+À l'être qui vient se faire masser
+Dans toute sa vulnérabilité...
+
+Rien n'est imposé.
+L'écoute est le secret.
+La présence et la connexion des alliées.
+L'amour est la clé.
+
+Merci pour ce cadeau de confiance et de vulnérabilité.
+En toute humilité.
+En toute humanité.</p>
+            <p class="poeme-signature">— Lidwine, Décembre 2024</p>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+        <div class="contact">
+            <div class="contact-image">
+                <img src="images/jardin-soleil.png" alt="Le jardin au coucher de soleil">
+            </div>
+            <div class="contact-content">
+                <p class="section-label">Prendre rendez-vous</p>
+                <h2>Commençons par échanger</h2>
+                <p class="contact-intro">
+                    Un entretien téléphonique est préalable au premier massage chez Monts Émerveilles. 
+                    N'hésitez pas à me contacter, je vous répondrai avec plaisir.
+                </p>
+
+                <div class="contact-method">
+                    <div class="contact-method-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                            <polyline points="22,6 12,13 2,6"/>
+                        </svg>
+                    </div>
+                    <div class="contact-method-content">
+                        <h4>Par email</h4>
+                        <a href="mailto:monts.emerveilles@gmail.com">monts.emerveilles@gmail.com</a>
+                    </div>
+                </div>
+
+                <div class="contact-method">
+                    <div class="contact-method-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="2" width="20" height="20" rx="5"/>
+                            <circle cx="12" cy="12" r="4"/>
+                            <circle cx="18" cy="6" r="1.5" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <div class="contact-method-content">
+                        <h4>Sur Instagram</h4>
+                        <a href="#">Message privé</a>
+                    </div>
+                </div>
+
+                <div class="contact-method">
+                    <div class="contact-method-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+                        </svg>
+                    </div>
+                    <div class="contact-method-content">
+                        <h4>Sur Facebook</h4>
+                        <a href="#">Message privé</a>
+                    </div>
+                </div>
+
+                <div class="contact-method">
+                    <div class="contact-method-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                            <circle cx="12" cy="10" r="3"/>
+                        </svg>
+                    </div>
+                    <div class="contact-method-content">
+                        <h4>Localisation</h4>
+                        <p>À quelques kilomètres de Tarare (69)</p>
+                    </div>
+                </div>
+
+                <div class="contact-note">
+                    <strong>Bon à savoir</strong>
+                    L'accès n'est pas adapté aux personnes à mobilité réduite.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">Monts Émerveilles</div>
+            <ul class="footer-links">
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#qui-suis-je">Lidwine</a></li>
+                <li><a href="#soins">Les soins</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="footer-social">
+                <a href="#" aria-label="Instagram">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <rect x="2" y="2" width="20" height="20" rx="5"/>
+                        <circle cx="12" cy="12" r="4"/>
+                        <circle cx="18" cy="6" r="1.5" fill="currentColor"/>
+                    </svg>
+                </a>
+                <a href="#" aria-label="Facebook">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Monts Émerveilles — Massage bien-être près de Tarare (69)</p>
+        </div>
+    </footer>
+
+    <script>
+        // Navigation scroll
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            navbar.classList.toggle('scrolled', window.scrollY > 50);
+        });
+
+        // Mobile menu
+        function toggleMenu() {
+            document.getElementById('mobileMenu').classList.toggle('active');
+        }
+
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
